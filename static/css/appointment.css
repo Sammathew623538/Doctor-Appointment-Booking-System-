@@ -1,0 +1,63 @@
+.main {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  min-height: 100vh;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+
+.card-content h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card-content p {
+  margin: 5px 0;
+  color: #555;
+}
+
+
+.card-actions {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn.accept {
+  background-color: #28a745;
+}
+
+.btn.reject {
+  background-color: #dc3545;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

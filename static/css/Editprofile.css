@@ -1,0 +1,73 @@
+body {
+  background-image: url("/static/images/pexels-karolina-grabowska-4386467.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* optional: keeps background still when scrolling */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.edit-profile-container {
+  min-height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-profile-card {
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 123, 150, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.edit-profile-card h2 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1976d2;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-actions input[type="submit"] {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.form-actions input[type="submit"]:hover {
+  background-color: #004d40;
+}

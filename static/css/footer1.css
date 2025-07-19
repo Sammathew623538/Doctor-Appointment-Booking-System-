@@ -1,0 +1,50 @@
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .section-padding {
+      padding: 60px 0;
+    }
+
+    .bottom {
+      background-color: #0a1c2e;
+    }
+
+    .bottom .copyright {
+      color: #e5e5e5;
+      font-weight: 600;
+    }
+
+    .copyright a {
+      color: #f2ff49;
+      margin-left: 3px;
+      padding-right: 3px;
+      text-decoration: none;
+    }
+
+    .copyright a:hover {
+      color: #6c6d83;
+    }
+
+    .bottom p {
+      margin-bottom: 0;
+      line-height: 50px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .copyright p span {
+      color: #d1caca;
+    }
+
+  
+    html, body {
+      height: 100%;
+    }
+
+    .content-wrapper {
+      min-height: calc(100vh - 150px); 
+    }

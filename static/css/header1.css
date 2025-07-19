@@ -1,0 +1,70 @@
+
+body {
+    padding-top: 70px; 
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #007bff !important;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.navbar-nav > li > a {
+    color: #333 !important;
+    font-weight: 500;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+    color: #007bff !important;
+    background-color: transparent;
+}
+
+/* Dropdown Login Panel */
+.dropdown-menu {
+    background-color: #f9f9f9;
+    padding: 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.dropdown-menu .form-group input {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu .btn {
+    margin-top: 10px;
+}
+
+.dropdown-menu strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.help-block a {
+    font-size: 12px;
+    color: #007bff;
+}
+
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar-toggle .icon-bar {
+    background-color: #007bff;
+}

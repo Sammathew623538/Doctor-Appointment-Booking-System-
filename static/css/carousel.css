@@ -1,0 +1,9 @@
+.main {
+    background-image: url('/static/images/pexels-pixabay-40568.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 20px;
+    color: white;
+    min-height: 700px; 
+}

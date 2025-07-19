@@ -1,0 +1,73 @@
+.custom-register-wrapper {
+  height: 100vh;
+    background: url("/static/images/pexels-gustavo-fring-3985168.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-register-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+l
+
+
+.custom-register-group {
+  margin-bottom: 15px;
+}
+
+.custom-register-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.custom-register-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.custom-register-group input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.custom-register-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.custom-register-btn:hover {
+  background-color: #218838;
+}
+
+.custom-register-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.custom-register-footer a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.custom-register-footer a:hover {
+  text-decoration: underline;
+}
