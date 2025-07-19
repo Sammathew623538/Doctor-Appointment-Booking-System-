@@ -75,25 +75,26 @@ It allows users to register, login, book appointments with doctors, and lets doc
 
 ## 🔧 How to Run
 
-```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/your-username/your-repo-name.git
-
 cd your-repo-name
 
-# Create virtual environment
+# 2. Create and activate virtual environment
 python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
+# For Linux / MacOS
+source env/bin/activate
+# For Windows
+env\Scripts\activate
 
-# Install dependencies
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# Run migrations
+# 4. Run migrations
 python manage.py makemigrations
 python manage.py migrate
 
-# Create a superuser (admin)
+# 5. Create superuser (Admin Login)
 python manage.py createsuperuser
 
-# Run the development server
+# 6. Run the development server
 python manage.py runserver
