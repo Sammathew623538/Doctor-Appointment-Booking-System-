@@ -76,8 +76,8 @@ It allows users to register, login, book appointments with doctors, and lets doc
 ## 🔧 How to Run
 
 # 1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Sammathew623538/Doctor-Appointment-Booking-System-.git
+cd Doctor-Appointment-Booking-System-
 
 # 2. Create and activate virtual environment
 python -m venv env
