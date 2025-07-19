@@ -1,0 +1,38 @@
+Folder PATH listing for volume D
+Volume serial number is D69C-E8E6
+D:.
+¦   db.sqlite3
+¦   manage.py
+¦   structure.txt
+¦   
++---mask
+¦   ¦   admin.py
+¦   ¦   apps.py
+¦   ¦   models.py
+¦   ¦   tests.py
+¦   ¦   views.py
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---migrations
+¦   ¦       urls.py
+¦   ¦       __init__.py
+¦   ¦       
+¦   +---__pycache__
+¦           admin.cpython-313.pyc
+¦           apps.cpython-313.pyc
+¦           models.cpython-313.pyc
+¦           __init__.cpython-313.pyc
+¦           
++---myproject2
+    ¦   asgi.py
+    ¦   settings.py
+    ¦   urls.py
+    ¦   wsgi.py
+    ¦   __init__.py
+    ¦   
+    +---__pycache__
+            settings.cpython-313.pyc
+            urls.cpython-313.pyc
+            wsgi.cpython-313.pyc
+            __init__.cpython-313.pyc
+            

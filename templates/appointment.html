@@ -1,0 +1,23 @@
+{% load static %}
+<div class="main">
+<div class="container">
+  {% for i in app %}
+   <link rel="stylesheet" href="{% static 'css/appointment.css' %}">
+  <div class="card">
+    <div class="card-content">
+      <h3>User: {{ i.user }}</h3>
+      <p><strong>Reason:</strong> {{ i.reason }}</p>
+      <p><strong>Booking Date:</strong> {{ i.bookingdate }}</p>
+    </div>
+    <div class="card-actions">
+      <a href="{% url 'accept' i.id %}">
+        <button class="btn accept">Accept</button>
+      </a>
+      <a href="{% url 'reject' i.id %}">
+        <button class="btn reject">Reject</button>
+      </a>
+    </div>
+  </div>
+</div>
+{% endfor %}
+  </div>

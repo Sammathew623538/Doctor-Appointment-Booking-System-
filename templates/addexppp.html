@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px 20px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 0 3px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .add-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #28a745;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .add-button:hover {
+      background-color: #218838;
+    }
+    P{
+      width: 10%;
+
+      background-color: black;
+      color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> ALL EXPENSES</h1>
+
+  <table>
+    <tr>
+      <th>NO:</th>
+      <th>Product</th>
+      <th>Price</th>
+       <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    {% for i in pro %}
+    <tr>
+      <td>{{ forloop.counter }}</td>
+      <td>{{ i.name }}</td>
+      <td>{{ i.price }}</td>
+      <td><a href="{% url 'Expedit' i.id %}" class="button">Edit</a></td>
+      <td><a href="{% url 'Expdel' i.id %}" class="button">Delete</a></td>
+    </tr>
+    {% endfor %} 
+
+  </table>
+
+  <a href="{% url 'exx' %}" class="add-button">+ Add Product</a>
+  
+   <hr>
+<p>Total  = {{tot}}</p>
+</body>
+</html>

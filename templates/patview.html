@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/bookings.css' %}">
+
+<div class="main">
+  <div class="container">
+    {% for i in book %}
+    <div class="card">
+      <p><strong>User:</strong> {{ i.user }}</p>
+      <p><strong>Doctor:</strong> {{ i.doctor }}</p>
+      <p><strong>Status:</strong> {{ i.bookingstatus }}</p>
+    </div>
+    {% empty %}
+    <p>No bookings found.</p>
+    {% endfor %}
+
+    <div class="back-btn">
+      <a href="{% url 'house' %}">
+        <button>Back</button>
+      </a>
+    </div>
+  </div>
+</div>

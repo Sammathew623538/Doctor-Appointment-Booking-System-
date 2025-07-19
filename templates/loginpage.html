@@ -1,0 +1,35 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block contents %}
+<link rel="stylesheet" href="{% static 'css/loginpage.css' %}">
+
+<div class="custom-login-wrapper">
+  <div class="custom-login-box">
+    <h2>Login</h2>
+    <form method="POST">
+      {% csrf_token %}
+      <div class="custom-form-group">
+        <label>Username</label>
+        <input type="text" name="username" required>
+      </div>
+
+      <div class="custom-form-group">
+        <label>Password</label>
+        <input type="password" name="password" required>
+      </div>
+
+      <div class="custom-form-check">
+        <input type="checkbox" id="rememberMe">
+        <label for="rememberMe">Remember Me</label>
+      </div>
+
+      <button type="submit" class="custom-login-btn">Login</button>
+    </form>
+
+    <div class="custom-login-footer">
+      <p>Don't have an account? <a href="#">Register</a></p>
+      <p><a href="#">Forgot Password?</a></p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+
+ 
+ {% block contents %}
+
+ 
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:20px;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://wallpapers.com/images/hd/marvel-4k-iron-man-cinematic-galaxy-vkwk0rfpghncxioy.jpg" style="width:100%; height:450px;">
+      <div class="carousel-caption">
+        <h3>Iron Man</h3><p>“I am Iron Man.” — Tony Stark</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://wallpapers.com/images/hd/marvel-cinematic-characters-collage-1kl27ihc9xnx1o4d.jpg" style="width:100%; height:450px;">
+      <div class="carousel-caption">
+        <h3>Avengers Assemble</h3><p>Earth’s Mightiest Heroes united for justice.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://wallpapers.com/images/hd/captain-america-shield-close-up-6em2wodvbm7s8jx2.jpg" style="width:100%; height:450px;">
+      <div class="carousel-caption">
+        <h3>Captain America</h3><p>“I can do this all day.”</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+{% endblock%}
+

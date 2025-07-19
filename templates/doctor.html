@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor List</title>
+    <link rel="stylesheet" href="{% static 'css/doctorlist.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Available Doctors</h2>
+        <div class="doctor-list">
+            {% for i in doctor %}
+                <a href="{% url 'bookdoc' i.id %}" class="doctor-card">
+                    <div class="card-content">
+                        <h3>{{ i.username }}</h3>
+                        <p>{{ i.email }}</p>
+                    </div>
+                </a>
+            {% empty %}
+                <p>No doctors available.</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

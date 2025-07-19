@@ -1,0 +1,40 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block contents %}
+
+<link rel="stylesheet" href="{% static 'css/hospital_profile.css' %}">
+
+<div class="hospital-container">
+  <div class="hospital-card">
+    <div class="card-header">
+      <img src="{% static 'images/default_profile.png' %}" alt="Profile Picture">
+      <div class="user-basic-info">
+        <h2>{{ pro.user }}</h2>
+        <p>Patient ID: #{{ pro.id }}</p>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <div class="info-row">
+        <label>📧 Email:</label>
+        <span>{{ pro.email }}</span>
+      </div>
+      <div class="info-row">
+        <label>📍 Address:</label>
+        <span>{{ pro.address }}</span>
+      </div>
+      <div class="info-row">
+        <label>📞 Phone:</label>
+        <span>{{ pro.phone_number }}</span>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a href="{% url 'Editprofile' %}">
+        <button class="edit-button">✏️ Edit Profile</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

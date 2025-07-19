@@ -1,0 +1,45 @@
+{% load static %}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and Toggle -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hospital-nav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">MediCare</a>
+    </div>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="hospital-nav">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="{% url 'dctr' %}">Doctors</a></li>
+        <li><a href="#">Departments</a></li>
+       
+        <li><a href="#">Contact</a></li>
+        
+
+        <!-- Register -->
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <!-- Login -->
+ <li><a href="{% url 'Login' %}">Login</a></li>
+
+{% if user.is_authenticated and not request.user.is_staff %}
+  <li><a href="{% url 'Logout' %}">Logout</a></li>
+  <li><a href="{% url 'profile' %}">Profile</a></li>
+  <li><a href="{% url 'patient' %}">Booking Status</a></li>
+{% endif %}
+
+{% if request.user.is_staff %}
+      <li><a href="{% url 'appo' %}">Appointments</a></li>
+        <li><a href="{% url 'Logout' %}">Logout</a></li>
+      
+{%endif%}
+
+
+
+</nav>
